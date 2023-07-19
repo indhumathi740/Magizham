@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+   <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo_item">
+    <i class="bx bx-menu" id="sidebarOpen"></i>
+    <img class="logo-box" src="https://infygain.com/images/logo.svg" alt="">
+  </div>
+
+  <div class="branch-bar">
+    <select id="branch-select">
+      <option value="branch1">Branch 1</option>
+      <option value="branch2">Branch 2</option>
+      <!-- Add more options for additional branches -->
+    </select>
+  </div>
+
+  <div class="search_bar">
+    <input type="text" placeholder="Search">
+  </div>
+
+  <div class="navbar_content">
+    <i class="bi bi-grid"></i>
+    <i class='bx bx-sun' id="darkLight"></i>
+    <i class='bx bx-bell'></i>
+    <img src="https://infygain.com/images/logo.svg" alt="" class="profile">
+  </div>
+</nav>
+  <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">   
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Dashboard</span> 
+              
+            
+            </div>
+
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Orders <br>Management</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Add Order</a>
+              <a href="#" class="nav_link sublink">Manage Order</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">       
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bxs-magic-wand"></i>
+              </span>
+              <span class="navlink">Production <br>Management</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-loader-circle"></i>
+              </span>
+              <span class="navlink">Waste<br> Management</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-filter"></i>
+              </span>
+              <span class="navlink">Stock <br>Management</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-grid-alt"></i>
+              </span>
+              <span class="navlink">Employee <br>Management</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">Add User</a>
+              <a href="#" class="nav_link sublink">Manage User</a>
+            </ul>
+          </li>
+          <li class="item">
+            <a href="/branch.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Branch<br>Management</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Reports</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">Accounts</span>
+            </a>
+          </li>
+        </ul>
+<!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Enable</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Disable</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
